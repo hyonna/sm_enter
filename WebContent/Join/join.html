@@ -3,9 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <link type="text/css" rel="stylesheet" href="/sm_enter/css/join.css">
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <title>Insert title here</title>
+
+<script type="text/javascript">
+
+$(function() {
+	
+	
+	
+
+				console.log($('#naver').val());
+				console.log($('#daum').val());
+				console.log($('#google').val());
+		
+			$('#naver').click(function() {
+				
+
+		
+	});
+	
+});
+
+</script>
+
+
 </head>
 <body>
 
@@ -142,13 +165,13 @@
 				<td class="td_title">이메일 입력</td>
 				<td class="td_2"><input type="text" id="femail" name="firstname" ></td>
 				<td><span class="e_txt">@</span></td>
-				<td class="td_2"><input type="text" id="femail2" name="firstname" ></td>
+				<td class="td_2"><input type="text" id="femail2" name="firstname" value=""></td>
 				<td class="td_2">
 				<select id="select_email">
-  								<option value="volvo">도메인 선택</option>
-   								<option value="naver">naver.com</option>
-   								<option value="daum">hanmil.net</option>
-  								 <option value="google">gmail.com</option>
+  								<option>도메인 선택</option>
+   								<option value="naver" id="naver">naver.com</option>
+   								<option value="daum" id="daum">hanmil.net</option>
+  								 <option value="google" id="google">gmail.com</option>
  								</select>
  				</td>
 			
